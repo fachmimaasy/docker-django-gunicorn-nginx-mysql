@@ -1,4 +1,4 @@
-version: '2.4'
+version: '3'
 services:
   web:
     container_name: web
@@ -27,8 +27,8 @@ services:
     volumes:
       - data-volume:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=django
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=adms_db
     healthcheck:
       test: "exit 0"
 
