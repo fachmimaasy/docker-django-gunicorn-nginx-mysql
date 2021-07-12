@@ -1,4 +1,4 @@
-FROM python:3.7-alpine
+FROM python:2.7.18
 
 RUN apk update \
     && apk add --no-cache --virtual bash \
